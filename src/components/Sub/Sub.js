@@ -3,6 +3,7 @@ import classes from './Sub.css';
 import SubIngredient from './SubIngredient/SubIngredient';
 
 const sub = (props) =>{
+    console.log(props);
     let ingredients = Object.keys(props.ingredients)
         .map(key => {
             return [...Array(props.ingredients[key])].map((_,i)=>{
@@ -15,7 +16,7 @@ const sub = (props) =>{
     if(ingredients.length===0){
         ingredients = <p>Please start adding ingredients </p>;
     }
-    console.log(ingredients)
+    
     return (
         <div className={classes.sub}>
             <SubIngredient type="bread-top" />

@@ -24,13 +24,13 @@
 @media(min-width:500px) and (min-height:400px){
     .sub {
         width: 550px;
-        height: 350px;
+        height: 300px;
     }
 }
 
 @media(min-width:1000px) and (min-height:700px){
     .sub {
         width: 800px;
-        height: 600px;
+        height: 550px;
     }
 }
